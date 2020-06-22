@@ -259,3 +259,169 @@ var secPassed=diff/1000;
 document.write("<br>"+secPassed+ "seconds are passed since 1 January, 2015 ");
 //Task 11
 */
+/*
+//CHAPTER 38-38
+//Task 1
+function dateTime(){
+    var curdate=new Date();
+    curdate=curdate.toString();
+    document.write("<br>"+curdate);
+}
+dateTime();
+//Task 2
+function greet(a,b){
+    document.write("<br>"+"Hello :"+ (a+b));
+}
+greet("Ali","Abbas");
+//Task 3
+var numb1=prompt("Enter first number");
+var numb2=prompt("Enter Second number");
+function sum(a,b){
+    return a+b;
+}
+var resultant=sum(numb1,numb2);
+//Task 4
+var operator=prompt("please provide operator");
+function calculator(a,b,op){
+    if(op=="+")
+    {
+        return a+b;
+    }
+    else if(op=="-")
+    {
+        return a-b;
+    }
+    else if(op=="*")
+    {
+        return a*b;
+    }
+    else if(op=="/")
+    {
+        return a/b;
+    }
+    else
+    {
+        return "Please provide proper value";
+    }
+}
+calculator(numb1,numb2,operator);
+//Task 5
+function square(a){
+return Math.sqrt(a);
+}
+square(numb1);
+//Task 6
+function factorial(a){
+    var n;
+    var result=a;
+    for(n=a-1;n>0;n--)
+    {
+        result=result*n;
+    }
+    return result;
+}
+factorial(numb1);
+//Task 7
+var start=1
+var end=10
+function counting(s,e){
+    for(var i=s;i<=e;i++)
+    {
+        document.write("<br>"+i);
+    }
+}
+counting(start,end);
+//Task 8
+var base=2;
+var perpandicular=2;
+function hypotenuse(ba,perp){
+    var a1=ba;
+    var b1=perp;
+    function squr(t){
+        s1=t*t;
+        return s1;
+    }
+    var res=squr(a1)+squr(b1);
+    return res;
+}
+hypotenuse(base,perpandicular);
+//Task 9
+var height=22;
+function area(w,h){
+    var are=w*h;
+    return are;
+}
+area(34,height);
+//Task 10
+var words="madam";
+function palindrome(w){
+    var word1="";
+    for(var c=w.length-1;c>=0;c--)
+    {
+        word1=word1+w[c];
+    }
+    if(w==word1)
+    {
+       document.write("<br>"+"word is palindrome");
+    }
+    else
+    {
+        document.write("<br>"+"word is not palindrome");
+    }
+    
+}
+palindrome(words);
+//Task 11
+var words = "the quick brown fox";
+function upcase(wor){
+for(var ww=0;ww<wor.length;ww++)
+    {
+        if(wor[i]==" ")
+        {wor[i+1].toUpperCase()}
+    }
+    return wor;    
+}
+upcase(words);
+//Task 12
+var word2="Web Development Tutorial";
+function expbreak(wor2){
+    var word3=wor2.split(' ');
+    var bigWord;
+    for(var ic=0;ic<word3.length;ic++)
+    {
+        if(word3[i].length>word3[i+1])
+        {
+            bigWord==word3[i]
+        }
+    }
+    return bigWord;
+}
+document.write("<br>"+"EXAMPLE STRING : ' "+word2 +"'");
+document.write("<br>"+"EXPECTED OUTPUT : ' "+expbreak(word2)+ +"'");
+//Task 13
+var string1="JSResourceS.com"
+var ltr1="o";
+function check(x,y)
+{
+    var counter=0;
+    for(iz=0;iz<x.length;iz++)
+    {
+        if(x[iz]==y)
+        {
+            counter++;
+        }
+    }
+    return counter;
+}
+document.write("The letter" + ltr1+ "occured "+ check(string1,ltr1)+"Times in expression"+string1);
+//Task 14
+var radius=3;
+function calcCircumference(ra){
+    return 2*3.14*ra;
+}
+function calcArea(rai){
+    return 3.14*(rai*rai);
+}
+document.write("<br>"+"The circumference is: "+calcCircumference(radius));
+document.write("<br>"+"The circumference is: "+calcArea(radius));
+*/
